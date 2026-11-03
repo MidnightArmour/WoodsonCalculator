@@ -9,3 +9,17 @@
 .results-panel article{width:100%;min-width:0;max-width:100%;overflow:hidden}
 @media(max-width:390px){.results-panel{padding:10px 8px;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}
 .results-panel{border-top:1px solid var(--line)!important;padding-top:11px!important}
+
+/* Centred, larger results without redundant headings */
+.results-panel header{display:flex!important;justify-content:center!important;margin-bottom:8px!important}
+.results-panel h2{display:none!important}
+.results-panel .actual{width:min(100%,132px);min-height:66px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:7px 6px!important}
+.results-panel .actual b{font-size:36px!important}
+.results-panel .actual small{font-size:11px!important;white-space:normal!important}
+/* Centred dice with actions below */
+.rollrow{display:flex!important;flex-direction:column;align-items:center;gap:10px!important}
+.dice{width:100%;display:flex;justify-content:center;gap:12px!important}
+.die{width:72px!important;height:62px!important;font-size:28px!important}
+.acts{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:9px!important}
+.acts button{min-height:48px!important}
+@media(max-width:390px){.die{width:68px!important;height:60px!important}.results-panel .actual{width:min(100%,124px)}}
