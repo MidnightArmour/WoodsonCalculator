@@ -28,3 +28,6 @@
 .audit{width:100%;margin-top:9px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
 .audit pre{min-width:0;margin:0;padding:10px;border:1px solid #39414a;border-radius:10px;background:#090c0f;color:#b9f6c8;font:11px/1.35 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere}
 @media(max-width:390px){.audit{gap:8px}.audit pre{padding:8px;font-size:10px}}
+
+/* Preserve probability-row alignment when Defender has no damage-3 outcome. */
+.defender-prob-spacer{visibility:hidden;pointer-events:none}
