@@ -1,9 +1,9 @@
-"use strict";const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],state={a:'government',t:'city'};let m;const clamp=(n,a,b)=>Math.max(a,Math.min(b,n));async function csv(p){let r=await fetch(p,{cache:'no-store'});if(!r.ok)throw Error(p);return(await r.text()).trim().split(/\r?\n/).map(x=>x.split(','))}function am(rows,name){
+"use strict";const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],state={a:'government',t:'city'};let m;const clamp=(n,a,b)=>Math.max(a,Math.min(b,n));async function csv(p){let r=await fetch(p,{cache:'no-store'});if(!r.ok)throw Error(p);let text=(await r.text()).replace(/^\uFEFF/,'');return text.split(/\r?\n/).map(line=>line.split(',').map(cell=>cell.trim())).map(row=>{while(row.length&&row.at(-1)==='')row.pop();return row}).filter(row=>row.some(cell=>cell!==''))}function am(rows,name){
  if(rows.length<2)throw Error(name+' matrix has no data rows');
  const xs=rows[0].slice(1).map(Number),ys=rows.slice(1).map(r=>Number(r[0]));
  const data=rows.slice(1).map(r=>r.slice(1).map(Number));
  if(!xs.length||xs.some(Number.isNaN)||ys.some(Number.isNaN))throw Error(name+' coordinate labels are invalid');
- if(data.some(r=>r.length!==xs.length||r.some(Number.isNaN)))throw Error(name+' rows do not match the header width');
+ let bad=data.findIndex(r=>r.length!==xs.length||r.some(Number.isNaN));if(bad>=0)throw Error(name+' row '+ys[bad]+' has '+data[bad].length+' damage cells; expected '+xs.length);
  return{xs,ys,data};
 }
 function dm(rows){
