@@ -103,5 +103,112 @@
         "taken": 2
       }
     }
+  },
+  "currentRules": {
+    "defaults": {
+      "attacker": "government",
+      "terrain": "city",
+      "political": 0,
+      "intel": 0,
+      "attackers": 1,
+      "damaged": 0,
+      "defenders": 1
+    },
+    "dice": {
+      "red": {
+        "government": 0,
+        "rebels": 0
+      },
+      "blue": {
+        "government": 0,
+        "rebels": 0
+      },
+      "green": {
+        "government": 0,
+        "rebels": 0
+      }
+    },
+    "terrain": {
+      "government": {
+        "city": {
+          "sa": 0,
+          "attack": 0,
+          "taken": 0
+        },
+        "plains": {
+          "sa": 1,
+          "attack": 1,
+          "taken": -1
+        },
+        "forest": {
+          "sa": 0,
+          "attack": 0,
+          "taken": 0
+        },
+        "mountain": {
+          "sa": -2,
+          "attack": -2,
+          "taken": 2
+        },
+        "base": {
+          "sa": 2,
+          "attack": 1,
+          "taken": -1
+        }
+      },
+      "rebels": {
+        "city": {
+          "sa": 0,
+          "attack": 0,
+          "taken": 0
+        },
+        "plains": {
+          "sa": -1,
+          "attack": -1,
+          "taken": 1
+        },
+        "forest": {
+          "sa": 1,
+          "attack": 1,
+          "taken": -1
+        },
+        "mountain": {
+          "sa": 2,
+          "attack": 2,
+          "taken": -2
+        },
+        "base": {
+          "sa": 0,
+          "attack": 2,
+          "taken": 2
+        }
+      }
+    },
+    "options": {
+      "reckless": {
+        "enabled": false,
+        "symbol": "\u26a1",
+        "damageCaused": 0,
+        "damageTaken": 0,
+        "sa": 0,
+        "attack": 0,
+        "defender": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      },
+      "scorched": {
+        "enabled": false,
+        "symbol": "\ud83d\udd25",
+        "damageCaused": 0,
+        "damageTaken": 0,
+        "sa": 0,
+        "attack": 0,
+        "defender": 0,
+        "red": 0,
+        "blue": 0,
+        "green": 0
+      }
+    }
   }
 }
