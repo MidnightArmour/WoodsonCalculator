@@ -11,3 +11,10 @@
 .optional .battle-option[aria-pressed="true"]{background:var(--blue)!important;border-color:#78b6ff;box-shadow:0 0 0 2px #78b6ff inset}
 
 /* Reckless and Scorched Earth are mutually exclusive battle choices. */
+
+/* Probability added by Reckless or Scorched Earth */
+.bar{position:relative}
+.fill-base{position:absolute;left:0;top:0;height:100%}
+.att .fill-base{background:var(--red)}
+.def .fill-base{background:var(--blue)}
+.fill-extra{position:absolute;top:0;height:100%;background:repeating-linear-gradient(135deg,#ffd45a 0 4px,#fff0a3 4px 8px);box-shadow:0 0 0 1px rgba(255,255,255,.35) inset}
