@@ -41,5 +41,61 @@
       "blue": 0,
       "green": 0
     }
+  },
+  "terrain": {
+    "government": {
+      "city": {
+        "sa": 0,
+        "attack": 0,
+        "taken": 0
+      },
+      "plains": {
+        "sa": 1,
+        "attack": 1,
+        "taken": -1
+      },
+      "forest": {
+        "sa": 0,
+        "attack": 0,
+        "taken": 0
+      },
+      "mountain": {
+        "sa": -2,
+        "attack": -2,
+        "taken": 2
+      },
+      "base": {
+        "sa": 2,
+        "attack": 1,
+        "taken": -1
+      }
+    },
+    "rebels": {
+      "city": {
+        "sa": 0,
+        "attack": 0,
+        "taken": 0
+      },
+      "plains": {
+        "sa": -1,
+        "attack": -1,
+        "taken": 1
+      },
+      "forest": {
+        "sa": 1,
+        "attack": 1,
+        "taken": -1
+      },
+      "mountain": {
+        "sa": 2,
+        "attack": 2,
+        "taken": -2
+      },
+      "base": {
+        "sa": 0,
+        "attack": 2,
+        "taken": 2
+      }
+    }
   }
 }
