@@ -1,0 +1,45 @@
+{
+  "defaults": {
+    "attacker": "government",
+    "terrain": "city",
+    "political": 0,
+    "intel": 0,
+    "attackers": 1,
+    "damaged": 0,
+    "defenders": 1
+  },
+  "dice": {
+    "red": {
+      "government": 0,
+      "rebels": 0
+    },
+    "blue": {
+      "government": 0,
+      "rebels": 0
+    },
+    "green": {
+      "government": 0,
+      "rebels": 0
+    }
+  },
+  "options": {
+    "reckless": {
+      "enabled": false,
+      "symbol": "\u26a1",
+      "damageCaused": 0,
+      "damageTaken": 0,
+      "red": 0,
+      "blue": 0,
+      "green": 0
+    },
+    "scorched": {
+      "enabled": false,
+      "symbol": "\ud83d\udd25",
+      "damageCaused": 0,
+      "damageTaken": 0,
+      "red": 0,
+      "blue": 0,
+      "green": 0
+    }
+  }
+}
