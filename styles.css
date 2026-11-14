@@ -29,3 +29,10 @@
 .table-name{min-width:0;font-size:12px;font-weight:700;overflow-wrap:anywhere}
 .modifier-table input{width:100%;min-width:0;min-height:38px;border:1px solid #555;border-radius:8px;background:#111;color:#fff;padding:5px 3px;text-align:center;font:inherit}
 @media(max-width:390px){.modifier-table{grid-template-columns:minmax(68px,1.05fr) repeat(3,minmax(0,1fr));gap:5px}.table-head{font-size:10px}.table-name{font-size:11px}.modifier-table input{padding:4px 2px}}
+
+/* Combined Reckless and Scorched Earth settings table */
+.option-table{display:grid;grid-template-columns:minmax(110px,1.25fr) repeat(2,minmax(0,1fr));gap:7px;align-items:center}
+.option-head{min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;text-align:center;font-size:12px;font-weight:800;color:#cbd2dc}
+.option-head input{width:22px;height:22px;margin:0}
+.option-table>input{width:100%;min-width:0;min-height:38px;border:1px solid #555;border-radius:8px;background:#111;color:#fff;padding:5px 3px;text-align:center;font:inherit}
+@media(max-width:390px){.option-table{grid-template-columns:minmax(100px,1.25fr) repeat(2,minmax(0,1fr));gap:5px}.option-head{font-size:11px}.option-table>input{padding:4px 2px}}
