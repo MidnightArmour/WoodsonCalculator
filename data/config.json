@@ -30,7 +30,10 @@
       "damageTaken": 0,
       "red": 0,
       "blue": 0,
-      "green": 0
+      "green": 0,
+      "sa": 0,
+      "attack": 0,
+      "defender": 0
     },
     "scorched": {
       "enabled": false,
@@ -39,7 +42,10 @@
       "damageTaken": 0,
       "red": 0,
       "blue": 0,
-      "green": 0
+      "green": 0,
+      "sa": 0,
+      "attack": 0,
+      "defender": 0
     }
   },
   "terrain": {
