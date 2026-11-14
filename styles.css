@@ -45,3 +45,8 @@
 .option-table{position:relative}
 .option-head{padding:6px 3px;border-radius:9px;background:rgba(92,70,137,.24)}
 .option-head:has(input:checked){background:rgba(63,131,248,.25);box-shadow:0 0 0 1px rgba(120,182,255,.55) inset}
+
+/* Restore canonical rule settings */
+.danger-button{width:100%;margin-top:10px;background:#8f2630!important;border:1px solid #d85b66;color:#fff;box-shadow:0 0 0 1px rgba(255,255,255,.06) inset}
+.danger-button:active{background:#6f1d25!important}
+.settings-notice{min-height:17px;margin:7px 2px 0;color:#f0c7ca;font-size:12px;text-align:center}
