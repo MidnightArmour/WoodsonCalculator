@@ -36,3 +36,12 @@
 .option-head input{width:22px;height:22px;margin:0}
 .option-table>input{width:100%;min-width:0;min-height:38px;border:1px solid #555;border-radius:8px;background:#111;color:#fff;padding:5px 3px;text-align:center;font:inherit}
 @media(max-width:390px){.option-table{grid-template-columns:minmax(100px,1.25fr) repeat(2,minmax(0,1fr));gap:5px}.option-head{font-size:11px}.option-table>input{padding:4px 2px}}
+
+/* Experimental attacker options */
+.settings-group:has(.experimental-title){position:relative;overflow:hidden;padding:13px 10px 11px;border:1px solid #61528f;border-radius:13px;background:linear-gradient(145deg,rgba(76,57,118,.38),rgba(27,29,32,.96) 58%);box-shadow:0 0 0 1px rgba(171,140,255,.08) inset,0 8px 24px rgba(0,0,0,.18)}
+.settings-group:has(.experimental-title)::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 88% 8%,rgba(122,91,255,.22),transparent 34%);pointer-events:none}
+.experimental-title{position:relative;display:flex;align-items:center;gap:7px;color:#ded4ff!important;letter-spacing:.2px}
+.experimental-title span{display:inline-grid;place-items:center;width:29px;height:29px;border-radius:9px;background:#4b397c;box-shadow:0 0 0 1px #8069bd inset}
+.option-table{position:relative}
+.option-head{padding:6px 3px;border-radius:9px;background:rgba(92,70,137,.24)}
+.option-head:has(input:checked){background:rgba(63,131,248,.25);box-shadow:0 0 0 1px rgba(120,182,255,.55) inset}
