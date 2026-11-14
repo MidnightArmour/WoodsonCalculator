@@ -9,3 +9,5 @@
 /* Reckless and Scorched Earth are independent multi-select battle toggles. */
 .optional .battle-option{background:#35383e!important;border:1px solid #4b5058}
 .optional .battle-option[aria-pressed="true"]{background:var(--blue)!important;border-color:#78b6ff;box-shadow:0 0 0 2px #78b6ff inset}
+
+/* Reckless and Scorched Earth are mutually exclusive battle choices. */
