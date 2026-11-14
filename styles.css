@@ -18,3 +18,7 @@
 .att .fill-base{background:var(--red)}
 .def .fill-base{background:var(--blue)}
 .fill-extra{position:absolute;top:0;height:100%;background:repeating-linear-gradient(135deg,#ffd45a 0 4px,#fff0a3 4px 8px);box-shadow:0 0 0 1px rgba(255,255,255,.35) inset}
+
+/* Probability removed by the active battle option */
+.fill-removed{position:absolute;top:0;height:100%;background:repeating-linear-gradient(135deg,rgba(0,0,0,.86) 0 4px,rgba(70,70,70,.72) 4px 8px);box-shadow:0 0 0 1px rgba(255,255,255,.12) inset}
+.expected-base{display:block;margin-top:3px;color:#aeb5bf;font-size:11px;font-weight:600}
