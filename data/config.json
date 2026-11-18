@@ -9,6 +9,10 @@
     "defenders": 1
   },
   "dice": {
+    "green": {
+      "government": 0,
+      "rebels": 0
+    },
     "red": {
       "government": 0,
       "rebels": 0
@@ -16,36 +20,6 @@
     "blue": {
       "government": 0,
       "rebels": 0
-    },
-    "green": {
-      "government": 0,
-      "rebels": 0
-    }
-  },
-  "options": {
-    "reckless": {
-      "enabled": false,
-      "symbol": "\u26a1",
-      "damageCaused": 0,
-      "damageTaken": 0,
-      "red": 0,
-      "blue": 0,
-      "green": 0,
-      "sa": 0,
-      "attack": 0,
-      "defender": 0
-    },
-    "scorched": {
-      "enabled": false,
-      "symbol": "\ud83d\udd25",
-      "damageCaused": 0,
-      "damageTaken": 0,
-      "red": 0,
-      "blue": 0,
-      "green": 0,
-      "sa": 0,
-      "attack": 0,
-      "defender": 0
     }
   },
   "terrain": {
@@ -53,55 +27,83 @@
       "city": {
         "sa": 0,
         "attack": 0,
-        "taken": 0
+        "defender": 0
       },
       "plains": {
         "sa": 1,
         "attack": 1,
-        "taken": -1
+        "defender": -1
       },
       "forest": {
         "sa": 0,
         "attack": 0,
-        "taken": 0
+        "defender": 0
       },
       "mountain": {
         "sa": -2,
         "attack": -2,
-        "taken": 2
+        "defender": 2
       },
       "base": {
         "sa": 2,
         "attack": 1,
-        "taken": -1
+        "defender": -1
       }
     },
     "rebels": {
       "city": {
         "sa": 0,
         "attack": 0,
-        "taken": 0
+        "defender": 0
       },
       "plains": {
         "sa": -1,
         "attack": -1,
-        "taken": 1
+        "defender": 1
       },
       "forest": {
         "sa": 1,
         "attack": 1,
-        "taken": -1
+        "defender": -1
       },
       "mountain": {
         "sa": 2,
         "attack": 2,
-        "taken": -2
+        "defender": -2
       },
       "base": {
         "sa": 0,
         "attack": 2,
-        "taken": 2
+        "defender": 2
       }
+    }
+  },
+  "options": {
+    "reckless": {
+      "enabled": false,
+      "symbol": "\u26a1",
+      "damageCaused": 0,
+      "casualty": 0,
+      "standingLoss": 0,
+      "sa": 0,
+      "attack": 0,
+      "defender": 0,
+      "red": 0,
+      "blue": 0,
+      "green": 0
+    },
+    "scorched": {
+      "enabled": false,
+      "symbol": "\ud83d\udd25",
+      "damageCaused": 0,
+      "casualty": 0,
+      "standingLoss": 0,
+      "sa": 0,
+      "attack": 0,
+      "defender": 0,
+      "red": 0,
+      "blue": 0,
+      "green": 0
     }
   },
   "currentRules": {
@@ -115,15 +117,15 @@
       "defenders": 1
     },
     "dice": {
+      "green": {
+        "government": 0,
+        "rebels": 0
+      },
       "red": {
         "government": 0,
         "rebels": 0
       },
       "blue": {
-        "government": 0,
-        "rebels": 0
-      },
-      "green": {
         "government": 0,
         "rebels": 0
       }
@@ -133,54 +135,54 @@
         "city": {
           "sa": 0,
           "attack": 0,
-          "taken": 0
+          "defender": 0
         },
         "plains": {
           "sa": 1,
           "attack": 1,
-          "taken": -1
+          "defender": -1
         },
         "forest": {
           "sa": 0,
           "attack": 0,
-          "taken": 0
+          "defender": 0
         },
         "mountain": {
           "sa": -2,
           "attack": -2,
-          "taken": 2
+          "defender": 2
         },
         "base": {
           "sa": 2,
           "attack": 1,
-          "taken": -1
+          "defender": -1
         }
       },
       "rebels": {
         "city": {
           "sa": 0,
           "attack": 0,
-          "taken": 0
+          "defender": 0
         },
         "plains": {
           "sa": -1,
           "attack": -1,
-          "taken": 1
+          "defender": 1
         },
         "forest": {
           "sa": 1,
           "attack": 1,
-          "taken": -1
+          "defender": -1
         },
         "mountain": {
           "sa": 2,
           "attack": 2,
-          "taken": -2
+          "defender": -2
         },
         "base": {
           "sa": 0,
           "attack": 2,
-          "taken": 2
+          "defender": 2
         }
       }
     },
@@ -189,7 +191,8 @@
         "enabled": false,
         "symbol": "\u26a1",
         "damageCaused": 0,
-        "damageTaken": 0,
+        "casualty": 0,
+        "standingLoss": 0,
         "sa": 0,
         "attack": 0,
         "defender": 0,
@@ -201,7 +204,8 @@
         "enabled": false,
         "symbol": "\ud83d\udd25",
         "damageCaused": 0,
-        "damageTaken": 0,
+        "casualty": 0,
+        "standingLoss": 0,
         "sa": 0,
         "attack": 0,
         "defender": 0,
